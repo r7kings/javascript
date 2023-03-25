@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div#area {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3em;
+            background-color: aqua;
+            height: 150px;
+            width: 150px;
+            text-align: center;
+            line-height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" onmou>Interaja...</div>
+    <script>
+        var a = document.getElementById('area')
+        a.addEventListener('click', clicou)
+        a.addEventListener('mouseenter', entrou)
+        a.addEventListener('mouseout', saiu)
+        function clicou() {
+            a.innerText = 'Clicou'
+            a.style.backgroundColor = 'red'
+        }
+        function entrou() {
+            a.innerText = 'Entrou'
+            a.style.backgroundColor = 'green'
+        }
+        function saiu() {
+            a.innerText = 'Interaja...'
+            a.style.backgroundColor = 'aqua'
+        }
+    </script>
+</body>
+</html>
