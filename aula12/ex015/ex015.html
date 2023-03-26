@@ -13,17 +13,29 @@
     </head>
     <section>
         <div id="texto">
-            <label for="anoN">Ano de Nascimento:</label>
-            <input type="number" name="anoN" id="anoN"><br>
-            Sexo:
-            <input type="radio" name="sexo" id="sexoM" value="M">
-            <label for="sexoM">Masculino</label>
-            <input type="radio" name="sexo" id="sexoF" value="M">
-            <label for="sexoF">Feminino</label><br>
-            <input type="submit" value="Verificar">
+            <div>
+                <label for="anoN">Ano de Nascimento:</label>
+                <input type="number" name="anoN" id="anoN"><br>
+            </div>
+            <div>
+                Sexo:
+                <input type="radio" name="sexo" id="sexoM" checked>
+                <label for="sexoM">Masculino</label>
+                <input type="radio" name="sexo" id="sexoF">
+                <label for="sexoF">Feminino</label>
+            </div>
+            <div>
+                <input type="submit" value="Verificar" onclick="verificar()">
+            </div>
+            <p>Preencha os dados acima para ver o resultado!</p>
         </div>
-        <div id="fundo">
+        <div>
+            <p id="res">
+
+            </p>
+            <div id="fundo">
             
+            </div>
         </div>
     </section>
     <footer>
